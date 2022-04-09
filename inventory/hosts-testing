@@ -1,0 +1,7 @@
+[ubuntu]
+ubuntu.local
+192.168.1.12
+
+[windows]
+192.168.1.10
+win10.local

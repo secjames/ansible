@@ -1,0 +1,11 @@
+- name: ininstall terminal tools
+  hosts: "ubuntu"
+  tasks:
+    - name: apt uninstall terminal tools
+      apt:
+        name: 
+          - tmux
+          - terminator
+        state: absent
+        autoremove: true
+      become: true

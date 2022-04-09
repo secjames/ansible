@@ -1,0 +1,11 @@
+- name: install all JMs tools
+  hosts: "ubuntu"
+  tasks:
+    - name: apt install all JMs tools
+      apt:
+        name: 
+          - tmux
+          - terminator
+        state: present
+        update_cache: true
+      become: true

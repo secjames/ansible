@@ -1,0 +1,9 @@
+- name: apt remove tmux
+  hosts: "ubuntu"
+  tasks:
+    - name: remove tmux
+      apt:
+        name: tmux
+        state: absent
+        autoremove: true
+      become: true

@@ -1,0 +1,11 @@
+- name: install terminal tools
+  hosts: "ubuntu"
+  tasks:
+    - name: apt install terminal tools
+      apt:
+        name: 
+          - tmux
+          - terminator
+        state: present
+        update_cache: true
+      become: true
